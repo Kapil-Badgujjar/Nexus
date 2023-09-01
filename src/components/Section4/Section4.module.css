@@ -1,0 +1,19 @@
+.s4Container {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 20px;
+}
+.s4Image {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .s4Container {
+        flex-direction: row;
+        padding: 50px;
+    }
+    .s4Image {
+        width: 60%;
+    }
+}

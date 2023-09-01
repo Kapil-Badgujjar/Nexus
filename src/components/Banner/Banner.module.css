@@ -1,0 +1,97 @@
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.bannerImage{
+    box-sizing: border-box;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.bannerMenu {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    padding:10px 25px;
+}
+.left {
+    font-size: 1.5rem;
+}
+.right {
+    width: 60%;
+    display: flex;
+}
+.right>a {
+    flex-grow: 1;
+    color: white;
+    text-decoration: none;
+}
+.bannerText {
+    box-sizing: border-box;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #333333ff;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+.bannerText>div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.bannerText>div>h1 {
+    font-size: 1.5rem;
+}
+.logoText {
+    display: none;
+    font-size: 2rem;
+}
+.hollowBtn {
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid white;
+    width: fit-content;
+}
+.hollowBtn:hover {
+    color: #333333ff;
+    background-color: white;
+}
+@media screen and (min-width: 480px) {
+    .bannerMenu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .bannerImage {
+        height: unset;
+    }
+    .bannerText {
+        padding: 30px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        background-color: transparent;
+        position: absolute;
+        top: 50%;
+        display: flex;
+        gap: 30px;
+        width: 100%;
+        max-width: 800px;
+        transform: translateY(-50%);
+    }
+    .logoText {
+        display: block;
+    }
+}

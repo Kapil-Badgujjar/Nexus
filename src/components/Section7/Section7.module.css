@@ -1,0 +1,7 @@
+.s7Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 50px;
+}

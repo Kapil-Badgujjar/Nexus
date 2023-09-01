@@ -1,0 +1,36 @@
+.s6Container {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 30px;
+}
+
+.s6Image {
+    width: 100%;
+}
+
+.s6Details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hollowBtn {
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid black;
+    width: fit-content;
+}
+.hollowBtn:hover {
+    color: white;
+    background-color: black;
+}
+
+@media screen and (min-width: 768px) {
+    .s6Container {
+        flex-direction: row;
+        padding: 50px;
+    }
+    .s6Image {
+        width: 60%;
+    }
+}
